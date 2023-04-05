@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Archivo";
+    src: url("@/assets/font/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("@/assets/font/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("@/assets/font/Roboto/Roboto-Light.ttf");
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("@/assets/font/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url("@/assets/img/bg.jpg"); */
+    background-size: 1000   px;
+    background-color: #3e3e42;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+
+/*** NAVBAR ***/
+.navbar {
+    top: 0;
+    position: -webkit-sticky;
+    color: white;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.navbar li {
+    padding: 20px;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    font-family: 'Archivo';
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: #007acc;
+}
+
+.navbar ul li a img {
+    display: none;
+}
+
+/*** MAIN PAGE ***/
+.title {
+    font-family: 'Archivo';
+    font-size: 70px;
+    text-align: center;
+    background-image: linear-gradient(to left, #007acc, white);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+}
+.container {
+    background-color: #252526;
+    color: white;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    width: 50%;
+    height: auto;   
+    border-radius: 20px;
+}
+#home {
+    background: none;
+    height: 950px;
+}
+#intro {
+    width: 100%;
+    margin-top: 250px;
+}
+
+#aboutme {
+    margin: 60px;
+    font-size: 24px;
+    color: white;
+}
+
+.social-icons {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container {
+    margin: 60px;
+}
+
+.contact-content {
+    display: flex;
+    align-items: baseline;
+}
+
+.contact-content img {
+    margin-right: 20px;
+}
+
+/*** SKILLS ***/
+/*** PROJECTS ***/
+/*** FOOTER ***/
+
+/* .footer {
+    background-color: #074985;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-decoration: none;
+    margin: 20px;   
+}
+
+.contact-element {
+    flex: none;
+    padding: 50px;
+}
+
+.contact-content {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+}  */
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+    
+}
